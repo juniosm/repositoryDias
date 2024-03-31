@@ -171,23 +171,26 @@ article {
    margin-right: auto;
 }
 
-.make {
-   justify-items: stretch;
+.make-wrapper {
+   position: relative;
 }
 
 .ask-text {
+   position: sticky;
+   top: 20px;
    width: 15ch;
    font-size: clamp(2rem, 6vw, 3rem);
    font-weight: 300;
    margin-bottom: 20px;
 }
 
-.list-response {
+.make {
+   justify-items: stretch;
    overflow-y: scroll;
    height: 756px;
 }
 
-.list-response::-webkit-scrollbar {
+.make::-webkit-scrollbar {
    display: none;
 }
 
@@ -277,11 +280,16 @@ article {
       margin-bottom: 36px;
    }
 
+   .make {
+      height: max-content;
+   }
+
    .list-response .card {
       flex-direction: column;
    }
 
    .ask-text {
+      position: relative;
       margin-bottom: 80px;
    }
 }

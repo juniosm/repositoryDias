@@ -1,10 +1,9 @@
 export default function Scroll() {
-   const section = document.querySelector(".make");
-   const campScroll = document.querySelector(".list-response");
+   const sections = document.querySelector("section");
 
-   console.log(section.scrollHeight);
-
-   section.addEventListener("click", e => {
-      console.log(e);
-   });
+   //  window.addEventListener("scroll", e => {
+   //     if (visualViewport.pageTop > section.offsetTop - 80) {
+   //        campScroll.scrollBy();
+   //     }
+   //  });
 }
